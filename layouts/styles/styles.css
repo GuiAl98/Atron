@@ -1,0 +1,537 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    font-family: 'Urbanist', sans-serif;
+}
+
+/* Navegador */
+nav{
+    background-color: #130C44;
+    height: 88px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 147px 0 30px;
+}
+
+nav a{
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.nav-cont{
+    height: 100%;
+    display: flex;
+    column-gap: 34px;
+    align-items: center;
+}
+
+.logo{
+    height: 63px;
+    width: 162px;
+    background-color: rgba(255, 255, 255, 0.25);;
+}
+
+/* REGISTRAME */
+.registrame{
+    height: 702px;
+    background: radial-gradient(1002.95% 6417.62% at -15.76% 5.44%, #136E82 0%, #3959A3 45.09%, #182848 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    margin: 0;
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.registrame button{
+    border: none;
+    background-color: #FDA700;
+    font-size: 36px;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 7px 30px;
+    margin-top: 40px;
+}
+
+.tit-reg{
+    text-align: center;
+}
+
+/* ENCARGAMOS */
+.encargamos{
+    background-color: #130C44;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 82px;
+    padding: 49px 0;
+}
+
+h2{
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.encargamos h2{
+    max-width: 410px;
+}
+
+.enc-cont p{
+    max-width: 446px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.encargamos dd{
+    margin: 0;
+    font-size: 16px;
+    margin-bottom: 46px;
+}
+
+.encargamos dt{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* QUIENES SOMOS*/
+.quienesSomos{
+    background-color: #1B335F;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.tit-somos{
+    margin: 75px 0 29px 0;
+}
+
+.tit-somos p{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.people{
+    background-color: #130C44;
+    border-radius: 10px;
+    padding: 24px 24px;
+    margin-bottom: 67px;
+    display: flex;
+    column-gap: 24px;
+}
+
+.retrato p{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.desc dt{
+    font-size: 20px;
+    font-weight: 700;
+    color: #FDA700;
+    padding-bottom: 5px;
+}
+
+.desc dd{
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.exp{
+    margin-top: 20px;
+}
+
+dl{
+    margin: 0;
+}
+
+/* PRESENCIA GLOBAL */
+.presenciaGlobal{
+    background-color: #130C44;
+}
+
+.tit-global{
+    margin: 48px 0 25px 0;
+}
+
+.tit-global p{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.presencia-bx{
+    display: flex;
+    column-gap: 63px;
+    margin-bottom: 56px;
+}
+
+.presencia p{
+    font-size: 20px;
+    font-weight: 700;
+    color: #FDA700;
+    margin: 0;
+}
+
+.presencia ul{
+    margin: 5px 0;
+    padding-left: 20px;
+}
+
+.presencia li{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.presencia{
+    border-left: 6px solid #FDA700;
+    padding: 7px 0 7px 19px;
+    margin-bottom: 32px;
+}
+
+.presencia:first-child{
+    margin-top: 31px;
+}
+
+.coleccion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+    max-width: 1138px;
+    margin-bottom: 65px;
+}
+
+.coleccion > div{
+    height: 274px;
+    width: 274px; 
+    position: relative;
+}
+
+.location{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.atron{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.atron u{
+    text-decoration-color: #FDA700;
+}
+
+.description{
+    position: absolute;
+    bottom: 22px;
+    left: 16px;
+}
+
+.description p{
+    margin: 0;
+}
+
+.hover{
+    background-color: rgba(56,53,53,0.568);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 50ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.pre:hover .hover{
+    opacity: 1;
+    visibility: visible;
+}
+
+.pre img{
+    border-radius: 10px;
+}
+
+/* ENERGIAS RENOVABLES*/
+#energiasRenovables{
+    background-color: #1B335F;
+}
+
+.energiasRenovables{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 100px;
+    padding: 51px 0 62px 0;
+}
+
+.ener-box .tit-ener{
+    font-size: 20px;
+}
+
+.ener-box p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.ener-box h4{
+    font-size: 20px;
+    font-weight: 700;
+    color: #FDA700;
+}
+
+.ener-box{
+    max-width: 563px;
+}
+
+.ener-box img{
+    margin-top: 50px;
+}
+
+/* RED GLOBAL */
+#redGlobal{
+    background-color: #130C44;
+}
+
+.redGlobal{
+    padding: 61px 0;
+}
+
+.redGlobal h2{
+    max-width: 562px;
+    margin-bottom: 34px;
+}
+
+.facts{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 18px;
+    row-gap: 23px;
+    max-width: 1236px;
+    margin-bottom: 92px;
+}
+
+.fact{
+    max-width: 368px;
+    padding: 27px 16px 16px 16px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.fact:hover{
+    background-color: #1B335F;
+}
+
+.fact p{
+    font-size: 16px;
+    margin: 0;
+}
+
+.fact h5{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 16px 0 7px 0;
+}
+
+.marcas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    align-items: center;
+}
+
+/* ESTRUCTURA DE INVERSION */
+#estructura{
+    background-color: #1B335F;
+    padding: 68px 0 24px 0;
+}
+
+.estructura h2{
+    margin-bottom: 38px;
+    max-width: 446px;
+}
+
+dt{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+dd{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 41px;
+}
+
+.estruc-cont{
+    max-width: 1032px;
+}
+
+/* RETORNO POR ALGORITMO */
+#retornoAlgoritmo{
+    background-color: #130C44;
+    color: #fff;
+    padding: 61px 0 85px 0;
+}
+
+/* PREGUNTAS FRECUENTES */
+#preguntasFrecuentes{
+    background-color: #130C44;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 72px 0 56px  0;
+}
+
+/* OTROS SERVICIOS */
+#otrosServicios{
+    background-color: #130C44;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 38px 0 80px 0;
+}
+
+.tit-serv p{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.tit-serv h2{
+    margin-bottom: 7px;
+}
+
+.tit-serv{
+    margin-bottom: 99px;
+}
+
+.pasos{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 52px;
+    row-gap: 111px;
+    max-width: 1270px;
+}
+
+.paso{
+    max-width: 547px;
+    padding: 34px 31px;
+    background-color: #1B335F;
+    border-radius: 10px;
+}
+
+.paso h5{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+.paso p{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* CONTACTO*/
+#contacto{
+    background-color: #130C44;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 35px 0 119px 0;
+}
+
+.contactos-bx{
+    display: flex;
+    column-gap: 114px;
+    margin-top: 69px;
+}
+
+.img-info{
+    width: 48px;
+     height: 48px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background:#FDA700;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.info{
+    display: flex;
+    column-gap: 24px;
+    margin-bottom: 100px;
+}
+
+.info p{
+    font-size: 36px;
+    font-weight: 400;
+    margin: 0;
+}
+
+input{
+    width: 447px;
+    margin-bottom: 30px;
+    padding: 27px 19px;
+    border-radius: 10px;
+    background-color: #1B335F;
+    color: rgba(255, 255, 255, 0.25);
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+textarea{
+    width: 447px;
+    height: 254px;
+    padding: 27px 19px;
+    border-radius: 10px;
+    background-color: #1B335F;
+    color: rgba(255, 255, 255, 0.25);
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    resize: none;
+    margin-bottom: 30px;
+}
+
+.contactos button{
+    border: none;
+    border-radius: 10px;
+    background-color: #FDA700;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 13px 0;
+    width: 265px;
+}
+
+.linea{
+    border: 1px solid #FDA700;
+    width: 90%;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: #130C44;
+}
+
+footer{
+    font-size: 16px;
+    font-weight: 400;
+    color: #BECDE3;
+    text-align: center;
+    padding: 30px 0 65px 0;
+    background-color: #130C44;
+}
