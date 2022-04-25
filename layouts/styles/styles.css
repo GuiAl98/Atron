@@ -1,6 +1,11 @@
 body{
     margin: 0;
     padding: 0;
+    min-width: 100%;
+}
+
+html{
+    min-width: 100%;
 }
 
 *{
@@ -13,7 +18,17 @@ nav{
     height: 88px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 0 147px 0 30px;
+}
+
+.burger{
+    display: none;
+}
+
+.cont-menu{
+    position: absolute;
+    left: -1000px;
 }
 
 nav a{
@@ -43,6 +58,7 @@ nav a{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 30px;
 }
 
 h1{
@@ -67,14 +83,23 @@ h1{
 }
 
 /* ENCARGAMOS */
-.encargamos{
+#encargamos{
     background-color: #130C44;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 49px;
+    padding-bottom: 49px;
+}
+
+.enc-bx{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     column-gap: 82px;
-    padding: 49px 0;
+    margin-top: 40px;
 }
 
 h2{
@@ -96,12 +121,35 @@ h2{
 .encargamos dd{
     margin: 0;
     font-size: 16px;
-    margin-bottom: 46px;
 }
 
 .encargamos dt{
     font-size: 20px;
     font-weight: 700;
+}
+
+.enc-bx > img{
+    height: 364px;
+}
+
+.compra-cont{
+    display: flex;
+    align-items: center;
+    column-gap: 44px;
+    margin-bottom: 46px;
+}
+
+.compra{
+    min-width: 48px;
+    width: 48px;
+    height: 48px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #FDA700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* QUIENES SOMOS*/
@@ -114,6 +162,7 @@ h2{
     justify-content: center;
     align-items: center;
     color: #fff;
+    padding: 0 30px;
 }
 
 .tit-somos{
@@ -131,6 +180,8 @@ h2{
     padding: 24px 24px;
     margin-bottom: 67px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     column-gap: 24px;
 }
 
@@ -138,6 +189,10 @@ h2{
     font-size: 20px;
     font-weight: 700;
     text-align: center;
+}
+
+.desc{
+    min-width: 350px;
 }
 
 .desc dt{
@@ -177,6 +232,8 @@ dl{
 
 .presencia-bx{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     column-gap: 63px;
     margin-bottom: 56px;
 }
@@ -275,6 +332,7 @@ dl{
 .energiasRenovables{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     column-gap: 100px;
     padding: 51px 0 62px 0;
 }
@@ -319,6 +377,7 @@ dl{
 .facts{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     column-gap: 18px;
     row-gap: 23px;
     max-width: 1236px;
@@ -350,6 +409,7 @@ dl{
 .marcas{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 60px;
     align-items: center;
 }
@@ -357,12 +417,37 @@ dl{
 /* ESTRUCTURA DE INVERSION */
 #estructura{
     background-color: #1B335F;
-    padding: 68px 0 24px 0;
+    padding-top: 68px;
+    padding-bottom: 24px;
 }
 
 .estructura h2{
     margin-bottom: 38px;
     max-width: 446px;
+}
+
+.estuc-inf{
+    display: flex;
+    column-gap: 24px;
+    margin-bottom: 41px;
+}
+
+.n-pres{
+    width: 48px;
+    min-width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #FDA700;
+    color: #130C44;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+}
+
+.pres{
+    width: auto;
+    max-width: 1032px;
 }
 
 dt{
@@ -374,11 +459,7 @@ dd{
     font-size: 16px;
     font-weight: 400;
     margin: 0;
-    margin-bottom: 41px;
-}
-
-.estruc-cont{
-    max-width: 1032px;
+    width: auto;
 }
 
 /* RETORNO POR ALGORITMO */
@@ -392,14 +473,16 @@ dd{
 #preguntasFrecuentes{
     background-color: #130C44;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
-    padding: 72px 0 56px  0;
+    padding-top: 72px;
+    padding-bottom: 56px;
 }
 
 /* OTROS SERVICIOS */
 #otrosServicios{
     background-color: #130C44;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
-    padding: 38px 0 80px 0;
+    padding-top: 38px;
+    padding-bottom: 80px;
 }
 
 .tit-serv p{
@@ -419,6 +502,7 @@ dd{
 .pasos{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     column-gap: 52px;
     row-gap: 111px;
     max-width: 1270px;
@@ -447,11 +531,14 @@ dd{
 #contacto{
     background-color: #130C44;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
-    padding: 35px 0 119px 0;
+    padding-top: 35px;
+    padding-bottom: 119px;
 }
 
 .contactos-bx{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     column-gap: 114px;
     margin-top: 69px;
 }
@@ -534,4 +621,239 @@ footer{
     text-align: center;
     padding: 30px 0 65px 0;
     background-color: #130C44;
+}
+
+/* PREGUNTAS FRECUENTES */
+.preguntas-cont{
+    margin-top: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 102px;
+}
+
+.tabs{
+    max-width: 570px;
+}
+
+.tabs-tit{
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 4px;
+    column-gap: 26px;
+    margin-bottom: 35px;
+}
+
+#apartado1, #apartado2, #apartado3{
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+
+.answer{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    max-width: 488px;
+    display: none;
+}
+
+.question-bx{
+    padding: 18px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question{
+    font-size: 20px;
+    font-weight: 700;
+    max-width: 488px;
+}
+
+.btn{
+    min-width: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #BECDE3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#q1, #q2, #q3, #q4, #q5{
+    border-bottom: 1px solid #BECDE3;
+}
+
+#apt2{
+    display: none;
+}
+
+#apt3{
+    display: none;
+}
+
+.active{
+    border-bottom: 2px solid #FDA700;
+}
+
+.replegar{
+    background-color: #FDA700;
+}
+
+.principio{
+    background-color: #FDA700;
+    border: none;
+    border-radius: 10px;
+    height: 67px;
+    position: fixed;
+    right: -100px /*53px*/;
+    bottom: 63px;
+    transition: 500ms;
+}
+
+@media (max-width: 1200px){
+    nav{
+        padding: 0 20px 0 20px;
+        justify-content: left;
+        justify-content: center;
+    }
+
+    .burger{
+        display: block;
+        position: absolute;
+        top: 17px;
+        left: 20px;
+    }
+
+    .nav-list{
+        display: none;
+    }
+
+    .burger > img{
+        height: 60px;
+    }
+
+    .active-menu{
+        left: 0;
+        transition: 500ms;
+    }
+
+    .no-scroll{
+        position: fixed;
+        width: 100%;
+    }
+
+    .cont-menu{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: #130C44;
+        top: 88px;
+        transition: 50ms;
+    }
+
+    .cont-menu ul{
+        list-style-type: none;
+        padding-left: 20px;
+    }
+
+    .cont-menu li{
+        padding-bottom: 40px;
+    }
+
+    .cont-menu a{
+        color: #fff;
+        font-size: 30px;
+        font-weight: 700;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 700px){
+    .enc-bx > img{
+        height: auto;
+        width: 300px;
+    }
+    .presencia-cont > img{
+        width: 400px;
+    }
+}
+
+@media (max-width: 600px){
+    .registrame{
+        height: 450px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    .registrame button, .info p{
+        font-size: 26px;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+
+    .p-h, h4, dt, .presencia p, .tabs-tit, .question, h5 {
+        font-size: 16px !important;
+    }
+
+    li, dd, .ener-box p, .answer, .paso p, .fact p{
+        font-size: 13px !important;
+    }
+
+    .ener-box > img, .question > img, .presencia-cont > img{
+        width: 300px;
+    }   
+
+    input, textarea{
+        width: 300px !important;
+    }
+
+    .compra-cont{
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 20px;
+        text-align: center;
+    }
+
+    .estuc-inf{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px){
+    .desc{
+        min-width: 250px !important;
+    }
+
+    input, textarea{
+        width: 250px !important;
+    }
+
+    .info p{
+        font-size: 20px;
+    }
+
+    .info{
+        align-items: center;
+    }
+
+    .main{
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 400px){
+    .registrame button{
+        font-size: 20px;
+    }
 }

@@ -11,7 +11,21 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="cont-menu " id="menu">
+        <ul>
+            <li><a class="Nav " href="#quienesSomos">¿Quiénes somos?</a></li>
+            <li><a class="Nav " href="#presenciaGlobal">Minerías</a></li>
+            <li><a class="Nav " href="#estructura">Inversión</a></li>
+            <li><a class="Nav " href="#preguntasFrecuentes">Preguntas Frecuentes</a></li>
+            <li><a class="Nav " href="#otrosServicios">Otros servicios</a></li>
+            <li><a class="Nav " href="#contacto">Registrame</a></li>
+        </ul>
+    </div>
     <nav>
+        <div class="burger">
+            <img src="img/burger-menu.png" alt="Menú">
+        </div>
+        <script src="scripts/mobile-menu.js"></script>
         <div class="nav-cont">
             <div class="logo">
                 <img src="" alt="">
@@ -19,26 +33,26 @@
         </div>
         <div class="nav-cont nav-list">
                 <div>
-                    <a href="">¿Quiénes somos?</a>
+                    <a href="#quienesSomos">¿Quiénes somos?</a>
                 </div>
                 <div>
-                    <a href="">Minerías</a>
+                    <a href="#presenciaGlobal">Minerías</a>
                 </div>
                 <div>
-                    <a href="">Inversión</a>
+                    <a href="#estructura">Inversión</a>
                 </div>
                 <div>
-                    <a href="">Preguntas Frecuentes</a>
+                    <a href="#preguntasFrecuentes">Preguntas Frecuentes</a>
                 </div>
                 <div>
-                    <a href="">Otros servicios</a>
+                    <a href="#otrosServicios">Otros servicios</a>
                 </div>
                 <div>
-                    <a href="">Registrame</a>
+                    <a href="#contacto">Registrame</a>
                 </div>
         </div>
     </nav>
-    <div class="registrame">
+    <div id="up" class="registrame">
         <div class="tit-reg">
             <h1>
                 Servicios de administración de minería
@@ -48,67 +62,97 @@
             </button>
         </div>
     </div>
-    <div class="main encargamos">
-        <div class="enc-bx">
+    <div id="encargamos" class="main">
+        <div class="encargamos">
             <div class="enc-cont">
                 <h2>
                     Nosotros nos encargamos de todo
                 </h2>
-                <p>
+                <p class="p-h">
                     Contamos con amplia experiencia en compra y administración de activos de minería
                 </p>    
             </div>
-            <div class="enc-cont">
-                <div class="compra-img">
-                    <img src="" alt="">
+            <div class="enc-bx">
+                <div class="enc-cont">
+                    <div class="compra-cont">
+                        <div class="compra">
+                            <img src="img/fan-white.png" alt="">
+                        </div>
+                        <div class="compra-at">
+                            <dt>
+                                Compra
+                            </dt>
+                            <dd>
+                                Compra de los equipos a los mejores precios y directamente con los fabricantes.
+                            </dd>
+                        </div>
+                    </div>
+                    <div class="compra-cont">
+                        <div class="compra">
+                            <img src="img/electric-white.png" alt="">
+                        </div>
+                        <div class="compra-at">
+                            <dt>
+                                Infraestructura
+                            </dt>
+                            <dd>
+                                Infraestructura e instalación eléctrica, contrato de suministro con compañía eléctrica.
+                            </dd>
+                        </div>
+                    </div>
+                    <div class="compra-cont">
+                        <div class="compra">
+                            <img src="img/instalation.png" alt="">
+                        </div>
+                        <div class="compra-at">
+                            <dt>
+                                Instalación 
+                            </dt>
+                            <dd>
+                                Instalación, configuración, operación y mantenimineto de los equipos de minería.
+                            </dd>
+                        </div>
+                    </div>
+                    <div class="compra-cont">
+                        <div class="compra">
+                            <img src="img/counting.png" alt="">
+                        </div>
+                        <div class="compra-at">
+                            <dt>
+                                Contaduría 
+                            </dt>
+                            <dd>
+                                Contaduría y distribución de ingresos mensuales
+                            </dd>
+                        </div>
+                    </div>
+                    <div class="compra-cont">
+                        <div class="compra">
+                            <img src="img/entrega.png" alt="">
+                        </div>
+                        <div class="compra-at">
+                            <dt>
+                                Entrega
+                            </dt>
+                            <dd>
+                                Entrega o venta del equipo obsoleto.
+                            </dd>
+                        </div>
+                    </div>
                 </div>
-                <div class="compra-cont">
-                    <dl>
-                        <dt>
-                            Compra
-                        </dt>
-                        <dd>
-                            Compra de los equipos a los mejores precios y directamente con los fabricantes.
-                        </dd>
-                        <dt>
-                            Infraestructura
-                        </dt>
-                        <dd>
-                            Infraestructura e instalación eléctrica, contrato de suministro con compañía eléctrica.
-                        </dd>
-                        <dt>
-                            Instalación 
-                        </dt>
-                        <dd>
-                            Instalación, configuración, operación y mantenimineto de los equipos de minería.
-                        </dd>
-                        <dt>
-                            Contaduría 
-                        </dt>
-                        <dd>
-                            Contaduría y distribución de ingresos mensuales
-                        </dd>
-                        <dt>
-                            Entrega
-                        </dt>
-                        <dd>
-                            Entrega o venta del equipo obsoleto.
-                        </dd>
-                    </dl>
+                <div class="enc-bx">
+                    <img src="img/nosotrosEncargamos.png" alt="">
                 </div>
             </div>
         </div>
-        <div class="enc-bx">
-            <img src="img/nosotrosEncargamos.png" alt="">
-        </div>
     </div>
-    <div class="main quienesSomos">
+    <div id="quienesSomos" class="main quienesSomos">
         <div class="quienesSomos">
             <div class="tit-somos">
                 <h2>
                     ¿Quiénes somos?
                 </h2>
-                <p>
+                <p class="p-h">
                     Creada en 2019, comenzamos con 23 equipos ASIC para minero de Ethereum (ETH) instalados en Monterrey
                 </p>
             </div>
@@ -189,13 +233,13 @@
             </div>
         </div>
     </div>
-    <div class="main presenciaGlobal">
+    <div id="presenciaGlobal" class="main presenciaGlobal">
         <div class="presenciaGlobal">
             <div class="tit-global">
                 <h2>
                     Presencia Global
                 </h2>
-                <p>
+                <p class="p-h">
                     Actualmente contamos con 200+ equipos en 4 minas, diversificadas geográficamente y entre varios algoritmos
                 </p>
             </div>
@@ -393,7 +437,7 @@
                 <h2>
                     Energías Renovables
                 </h2>
-                <p class="tit-ener">
+                <p class="tit-ener p-h">
                     Buscamos Soluciones renovables en cada desarrollo
                 </p>
                 <h4>
@@ -499,55 +543,99 @@
             <h2>
             Estructura de la inversión y comisiones
         </h2>
-        <div class="estruc-list">
-            <img src="" alt="">
-        </div>
         <div class="estruc-cont">
-            <dl>
-                <dt>
-                    Préstamo
-                </dt>
-                <dd>
-                    Sociedad Anónima de Capital Variable (SA de CV) recibe un préstamo de parte de los inversionistas (mínimo US$50,000 por inversionista) Se firma contrato del préstamo con certificación del notario  y un pagaré.
-                </dd>
-                <dt>
-                    Contrato
-                </dt>
-                <dd>
-                    El préstamo se utiliza para adquisición de equipo de minería (>90%), infraestructura e instalación eléctrica (&#8249;10%).
-                </dd>
-                <dt>
-                    Firma
-                </dt>
-                <dd>
-                    Inversionistas además firman un contrato de operación.
-                </dd>
-                <dt>
-                    Ingreso
-                </dt>
-                <dd>
-                    El 100% del ingreso se paga mensualmente a los inversionistas después de cubrir el costo variable de USD$0.09 por kilowatt-hora (incluye renta de la bodega, costo de electricidad conectividad, sueldos y refacciones), Nosotros cobramos CERO hasta que el retorno de inversión sea del 100% a partir de ahí cobramos el 25% de las ganancias después de pagar electricidad.
-                </dd>
-                <dt>
-                    Tipo de pago
-                </dt>
-                <dd>
-                    Todos los pagos se hacen en criptomonedas estables (valor fijo en dólares).
-                </dd>
-                <dt>
-                    Ajuste
-                </dt>
-                <dd>
-                    Una vez saldado el préstamo, la comisión por el contrato de operación se fija en 20% de los ingresos después del costo varibale.
-                </dd>
-                <dt>
-                    ROI
-                </dt>
-                <dd>
-                    Retorno esperado sobre inversión es de 12 a 24 meses usando rentabilidad presente.
-                </dd>
-            </dl>
-        </div>
+                <div class="estuc-inf">
+                    <div class="n-pres">
+                        1
+                    </div>
+                    <div class="pres">
+                        <dt>
+                            Préstamo
+                        </dt>
+                        <dd>
+                            Sociedad Anónima de Capital Variable (SA de CV) recibe un préstamo de parte de los inversionistas (mínimo US$50,000 por inversionista) Se firma contrato del préstamo con certificación del notario  y un pagaré.
+                        </dd>
+                    </div>
+                </div>
+                <div class="estuc-inf">
+                    <div class="n-pres">
+                        2
+                    </div>
+                    <div class="pres">
+                        <dt>
+                            Contrato
+                        </dt>
+                        <dd>
+                            El préstamo se utiliza para adquisición de equipo de minería (>90%), infraestructura e instalación eléctrica (&#8249;10%).
+                        </dd>
+                    </div>
+                </div>
+                <div class="estuc-inf">
+                    <div class="n-pres">
+                        3
+                    </div>
+                    <div class="pres">
+                        <dt>
+                            Firma
+                        </dt>
+                        <dd>
+                            Inversionistas además firman un contrato de operación.
+                        </dd>
+                    </div>
+                </div>
+                <div class="estuc-inf">
+                    <div class="n-pres">
+                        4
+                    </div>
+                    <div class="pres">
+                        <dt>
+                            Ingreso
+                        </dt>
+                        <dd>
+                            El 100% del ingreso se paga mensualmente a los inversionistas después de cubrir el costo variable de USD$0.09 por kilowatt-hora (incluye renta de la bodega, costo de electricidad conectividad, sueldos y refacciones), Nosotros cobramos CERO hasta que el retorno de inversión sea del 100% a partir de ahí cobramos el 25% de las ganancias después de pagar electricidad.
+                        </dd>
+                    </div>
+                </div>
+                <div class="estuc-inf">
+                    <div class="n-pres">
+                        5
+                    </div>
+                    <div class="pres">
+                        <dt>
+                            Tipo de pago
+                        </dt>
+                        <dd>
+                            Todos los pagos se hacen en criptomonedas estables (valor fijo en dólares).
+                        </dd>
+                    </div>
+                </div>
+                <div class="estuc-inf">
+                    <div class="n-pres">
+                        6
+                    </div>
+                    <div class="pres">
+                        <dt>
+                            Ajuste
+                        </dt>
+                        <dd>
+                            Una vez saldado el préstamo, la comisión por el contrato de operación se fija en 20% de los ingresos después del costo varibale.
+                        </dd>
+                    </div>
+                </div>
+                <div class="estuc-inf">
+                    <div class="n-pres">
+                        7
+                    </div>
+                    <div class="pres">
+                        <dt>
+                            ROI
+                        </dt>
+                        <dd>
+                            Retorno esperado sobre inversión es de 12 a 24 meses usando rentabilidad presente.
+                        </dd>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div id="retornoAlgoritmo">
@@ -563,19 +651,239 @@
             <h2>
                 Preguntas Frecuentes
             </h2>
+            <div class="preguntas-cont">
+                <div class="tabs">
+                    <div class="tabs-tit">
+                        <div id="apartado1" class="apt active" onclick="tab(event, 'apt1')">
+                            Apartado 1
+                        </div>
+                        <div id="apartado2" class="apt" onclick="tab(event, 'apt2')">
+                            Apartado 2
+                        </div>
+                        <div id="apartado3" class="apt" onclick="tab(event, 'apt3')">
+                            Apartado 3
+                        </div>
+                    </div>
+                    <div id="apt1" class="tabs-qtn">
+                        <div id="q1">
+                            <div class="question-bx">
+                                <div class="question">
+                                    ¿Puedo escoger en cuál mina invertir?
+                                </div>
+                                <div class="btn" onclick="desplegar(event, 'answer1', 'btn1')">
+                                    <img id="btn1" src="img/desplega.png" alt="">
+                                </div>
+                            </div>
+                            <div id="answer1" class="answer">
+                                A partir de noviembre/diciembre esta mina se cambiará a otro site de 8 MW y tendremos acceso a la bodega presente.
+                            </div>
+                        </div>
+                        <div id="q2">
+                            <div class="question-bx">
+                                <div class="question">
+                                    ¿Cuál es la inversión mínima para participar en la mina de Paducah?
+                                </div>
+                                <div class="btn" onclick="desplegar(event, 'answer2', 'btn2')">
+                                    <img id="btn2" src="img/desplega.png" alt="">
+                                </div>
+                            </div>
+                            <div id="answer2" class="answer">
+                                A partir de noviembre/diciembre esta mina se cambiará a otro site de 8 MW y tendremos acceso a la bodega presente.
+                            </div>
+                        </div>
+                        <div id="q3">
+                            <div class="question-bx">
+                                <div class="question">
+                                    ¿Con mi inversión me otorgan acciones o me dan participación de la compañía?
+                                </div>
+                                <div class="btn" onclick="desplegar(event, 'answer3', 'btn3')">
+                                    <img id="btn3" src="img/desplega.png" alt="">
+                                </div>
+                            </div>
+                            <div id="answer3" class="answer">
+                                A partir de noviembre/diciembre esta mina se cambiará a otro site de 8 MW y tendremos acceso a la bodega presente.
+                            </div>
+                        </div>
+                        <div id="q4">
+                            <div class="question-bx">
+                                <div class="question">
+                                    ¿Y cuál es la comisión que Atron cobra?
+                                </div>
+                                <div class="btn" onclick="desplegar(event, 'answer4', 'btn4')">
+                                    <img id="btn4" src="img/desplega.png" alt="">
+                                </div>
+                            </div>
+                            <div id="answer4" class="answer">
+                                A partir de noviembre/diciembre esta mina se cambiará a otro site de 8 MW y tendremos acceso a la bodega presente.
+                            </div>
+                        </div>
+                        <div id="q5">
+                            <div class="question-bx">
+                                <div class="question">
+                                    ¿Cómo se usan los fondos de mi inversión? ¿Cómo funciona la compra de mineros?
+                                </div>
+                                <div class="btn" onclick="desplegar(event, 'answer5', 'btn5')">
+                                    <img id="btn5" src="img/desplega.png" alt="">
+                                </div>
+                            </div>
+                            <div id="answer5" class="answer">
+                                A partir de noviembre/diciembre esta mina se cambiará a otro site de 8 MW y tendremos acceso a la bodega presente.
+                            </div>
+                        </div>
+                    </div>
+                    <div id="apt2" class="tabs-qtn">
+                        <div id="q1">
+                            <div class="question-bx">
+                                <div class="question">
+                                    ¿Puedo escoger en cuál mina invertir?---
+                                </div>
+                                <div class="btn" onclick="desplegar(event, 'answer6', 'btn6')">
+                                    <img id="btn6" src="img/desplega.png" alt="">
+                                </div>
+                            </div>
+                            <div id="answer6" class="answer">
+                                A partir de noviembre/diciembre esta mina se cambiará a otro site de 8 MW y tendremos acceso a la bodega presente.
+                            </div>
+                        </div>
+                        <div id="q2">
+                            <div class="question-bx">
+                                <div class="question">
+                                    ¿Cuál es la inversión mínima para participar en la mina de Paducah?
+                                </div>
+                                <div class="btn" onclick="desplegar(event, 'answer7', 'btn7')">
+                                    <img id="btn7" src="img/desplega.png" alt="">
+                                </div>
+                            </div>
+                            <div id="answer7" class="answer">
+                                A partir de noviembre/diciembre esta mina se cambiará a otro site de 8 MW y tendremos acceso a la bodega presente.
+                            </div>
+                        </div>
+                        <div id="q3">
+                            <div class="question-bx">
+                                <div class="question">
+                                    ¿Con mi inversión me otorgan acciones o me dan participación de la compañía?
+                                </div>
+                                <div class="btn" onclick="desplegar(event, 'answer8', 'btn8')">
+                                    <img id="btn8" src="img/desplega.png" alt="">
+                                </div>
+                            </div>
+                            <div id="answer8" class="answer">
+                                A partir de noviembre/diciembre esta mina se cambiará a otro site de 8 MW y tendremos acceso a la bodega presente.
+                            </div>
+                        </div>
+                        <div id="q4">
+                            <div class="question-bx">
+                                <div class="question">
+                                    ¿Y cuál es la comisión que Atron cobra?
+                                </div>
+                                <div class="btn" onclick="desplegar(event, 'answer9', 'btn9')">
+                                    <img id="btn9" src="img/desplega.png" alt="">
+                                </div>
+                            </div>
+                            <div id="answer9" class="answer">
+                                A partir de noviembre/diciembre esta mina se cambiará a otro site de 8 MW y tendremos acceso a la bodega presente.
+                            </div>
+                        </div>
+                        <div id="q5">
+                            <div class="question-bx">
+                                <div class="question">
+                                    ¿Cómo se usan los fondos de mi inversión? ¿Cómo funciona la compra de mineros?
+                                </div>
+                                <div class="btn" onclick="desplegar(event, 'answer10', 'btn10')">
+                                    <img id="btn10" src="img/desplega.png" alt="">
+                                </div>
+                            </div>
+                            <div id="answer10" class="answer">
+                                A partir de noviembre/diciembre esta mina se cambiará a otro site de 8 MW y tendremos acceso a la bodega presente.
+                            </div>
+                        </div>
+                    </div>
+                    <div id="apt3" class="tabs-qtn">
+                        <div id="q1">
+                            <div class="question-bx">
+                                <div class="question">
+                                    ¿Puedo escoger en cuál mina invertir?***
+                                </div>
+                                <div class="btn" onclick="desplegar(event, 'answer11', 'btn11')">
+                                    <img id="btn11" src="img/desplega.png" alt="">
+                                </div>
+                            </div>
+                            <div id="answer11" class="answer">
+                                A partir de noviembre/diciembre esta mina se cambiará a otro site de 8 MW y tendremos acceso a la bodega presente.
+                            </div>
+                        </div>
+                        <div id="q2">
+                            <div class="question-bx">
+                                <div class="question">
+                                    ¿Cuál es la inversión mínima para participar en la mina de Paducah?
+                                </div>
+                                <div class="btn" onclick="desplegar(event, 'answer12', 'btn12')">
+                                    <img id="btn12" src="img/desplega.png" alt="">
+                                </div>
+                            </div>
+                            <div id="answer12" class="answer">
+                                A partir de noviembre/diciembre esta mina se cambiará a otro site de 8 MW y tendremos acceso a la bodega presente.
+                            </div>
+                        </div>
+                        <div id="q3">
+                            <div class="question-bx">
+                                <div class="question">
+                                    ¿Con mi inversión me otorgan acciones o me dan participación de la compañía?
+                                </div>
+                                <div class="btn" onclick="desplegar(event, 'answer13', 'btn13')">
+                                    <img id="btn13" src="img/desplega.png" alt="">
+                                </div>
+                            </div>
+                            <div id="answer13" class="answer">
+                                A partir de noviembre/diciembre esta mina se cambiará a otro site de 8 MW y tendremos acceso a la bodega presente.
+                            </div>
+                        </div>
+                        <div id="q4">
+                            <div class="question-bx">
+                                <div class="question">
+                                    ¿Y cuál es la comisión que Atron cobra?
+                                </div>
+                                <div class="btn" onclick="desplegar(event, 'answer14', 'btn14')">
+                                    <img id="btn14" src="img/desplega.png" alt="">
+                                </div>
+                            </div>
+                            <div id="answer14" class="answer">
+                                A partir de noviembre/diciembre esta mina se cambiará a otro site de 8 MW y tendremos acceso a la bodega presente.
+                            </div>
+                        </div>
+                        <div id="q5">
+                            <div class="question-bx">
+                                <div class="question">
+                                    ¿Cómo se usan los fondos de mi inversión? ¿Cómo funciona la compra de mineros?
+                                </div>
+                                <div class="btn" onclick="desplegar(event, 'answer15', 'btn15')">
+                                    <img id="btn15" src="img/desplega.png" alt="">
+                                </div>
+                            </div>
+                            <div id="answer15" class="answer">
+                                A partir de noviembre/diciembre esta mina se cambiará a otro site de 8 MW y tendremos acceso a la bodega presente.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question">
+                    <img src="img/pregunta.png" alt="">
+                </div>
+            </div>
         </div>
-
     </div>
+    <script src="scripts/tabs.js"></script>
+    <script src="scripts/desplegar.js"></script>
     <div id="otrosServicios" class="main">
         <div class="otrosServicios">
             <div class="tit-serv">
                 <h2>
                     Otros Servicios
                 </h2>
-                <p>
+                <p class="p-h">
                     Además de hosteo de equipos de minería, también podemos proveer consultoría para tu propio proyecto de minería.
                 </p>
-                <p>
+                <p class="p-h">
                     Te podemos ayudar con cualquiera de los 4 pasos necesarios:
                 </p>
             </div>
@@ -671,6 +979,12 @@
     <div class="footer">
         <div class="linea"></div>
     </div>
+    <button id="upButton" class="principio">
+        <a href="#up">
+            <img src="img/up.png" alt="">
+        </a>
+    </button>
+    <script src="scripts/up-button.js"></script>
     <footer>
         <p>
             Copyright © 2022. Todos los derechos reservados
